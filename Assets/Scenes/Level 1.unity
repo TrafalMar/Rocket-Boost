@@ -121,13 +121,29 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &68480820
+--- !u!108 &705507994 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 4078668322913121259, guid: 19134a9f68ad5684e91cc9d07e361ca4,
+    type: 3}
+  m_PrefabInstance: {fileID: 4078668323281355121}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1338388099
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2286061940282155827, guid: 3611c3ef4d56642478a0b588e54bf5c7,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2286061940282155827, guid: 3611c3ef4d56642478a0b588e54bf5c7,
+        type: 3}
+      propertyPath: m_Mass
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5518545519391235666, guid: 3611c3ef4d56642478a0b588e54bf5c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -136,7 +152,7 @@ PrefabInstance:
     - target: {fileID: 5518545519391235666, guid: 3611c3ef4d56642478a0b588e54bf5c7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.62
+      value: 2.72
       objectReference: {fileID: 0}
     - target: {fileID: 5518545519391235666, guid: 3611c3ef4d56642478a0b588e54bf5c7,
         type: 3}
@@ -190,12 +206,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3611c3ef4d56642478a0b588e54bf5c7, type: 3}
---- !u!108 &705507994 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 4078668322913121259, guid: 19134a9f68ad5684e91cc9d07e361ca4,
-    type: 3}
-  m_PrefabInstance: {fileID: 4078668323281355121}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &259879411457362349
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -371,6 +381,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8b9f412a306319346b1842868b1e760d, type: 2}
+    - target: {fileID: 8603194795164931643, guid: 48a3d0d717aeac846af95a41c1e0d059,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8603194795164931645, guid: 48a3d0d717aeac846af95a41c1e0d059,
         type: 3}
       propertyPath: m_LocalPosition.x
