@@ -444,6 +444,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rcsThrust: 100
   mainThrust: 50
+  levelLoadDelay: 1.5
+  nextLevel: 3
   mainEngine: {fileID: 8300000, guid: ec359f9af5541db4daa7b08888703790, type: 3}
   success: {fileID: 8300000, guid: c4fc321b2e334b54991357fde0613265, type: 3}
   death: {fileID: 8300000, guid: f2f7571713a7104408c3c1041c1918f1, type: 3}
@@ -749,7 +751,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4100699973242056, guid: 62198a3a5dbb64a4f9e1618929224faa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.69
       objectReference: {fileID: 0}
     - target: {fileID: 4100699973242056, guid: 62198a3a5dbb64a4f9e1618929224faa, type: 3}
       propertyPath: m_LocalPosition.z
