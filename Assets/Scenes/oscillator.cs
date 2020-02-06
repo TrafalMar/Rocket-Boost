@@ -11,6 +11,9 @@ public class oscillator : MonoBehaviour
     [Range(0, 10)]
     [SerializeField] 
     float period = 2f;
+    [Range(0, 1)]
+    [SerializeField]
+    float offset = 0;
 
     Vector3 startingPos;
 
@@ -25,10 +28,10 @@ public class oscillator : MonoBehaviour
     {
         if (period <= Mathf.Epsilon) return;
         float cycles = Time.time/period;
-        float rawSinWave = Mathf.Sin(cycles * Mathf.PI*2);
+        float rawSinWave = Mathf.Sin(cycles * Mathf.PI*2+offset*Mathf.PI);
         movementFactor = rawSinWave / 2f+0.5f;
 
-        Vector3 offset = movementVector * movementFactor;
-        transform.position = startingPos + offset;
+        Vector3  position= movementVector * movementFactor;
+        transform.position = startingPos + position;
     }
 }
